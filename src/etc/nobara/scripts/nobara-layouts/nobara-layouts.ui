@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
+<!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkRadioButton" id="radiobutton1">
@@ -23,21 +23,6 @@
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
-        <child>
-          <object class="GtkStackSwitcher" id="main_switcher">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="homogeneous">True</property>
-            <property name="stack">main_stack</property>
-            <signal name="show" handler="on_main_switcher_show" swapped="no"/>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="pack-type">end</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
         <child>
           <object class="GtkStack" id="main_stack">
             <property name="visible">True</property>
@@ -92,6 +77,11 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The good old michealsoft binbows layout:
+* A Bottom taskbar.
+* An Application Menu binded to the "Super Key".
+* Desktop Icons.
+* Full window controls on the right side of the window.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -140,6 +130,12 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The michealsoft binbows layout but newer:
+* A Bottom taskbar with centered icons.
+* A More modern Application Menu binded to the "Super Key".
+* Desktop Icons.
+* Full window controls on the right side of the window.
+* "Activities" button for wasy workspace management.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -188,6 +184,12 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The Ma....... i mean the PearOS layout:
+* A Bottom Dock and a top panel.
+* A Fullscreen Application grid.
+* Desktop Icons.
+* Full window controls on the left side of the window.
+* "Activities" button for wasy workspace management.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -236,6 +238,10 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The Ubuntu Unity Experience:
+* A Leftside Dock and a top panel.
+* Desktop Icons.
+* Full window controls on the left side of the window.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -284,6 +290,7 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The Old Gnome/Mate Experience.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -332,6 +339,7 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">The Stock GNOME Experience.</property>
                                 <property name="halign">center</property>
                                 <property name="valign">center</property>
                                 <property name="draw-indicator">True</property>
@@ -351,13 +359,234 @@
                           </packing>
                         </child>
                         <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
+                          <object class="GtkBox" id="accent_box">
+                            <property name="name">accent_box</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">start</property>
+                            <child>
+                              <object class="GtkButton" id="blue_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="blue_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="blue_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Blue</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/blue.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="green_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="green_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="green_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Green</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/green.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="yellow_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="yellow_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="yellow_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Yellow</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/yellow.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="orange_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="orange_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="orange_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Orange</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/orange.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">3</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="red_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="red_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="red_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Red</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/red.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">4</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="magenta_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="magenta_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="magenta_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Magenta</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/magenta.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">5</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="purple_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="purple_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="purple_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Purple</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/purple.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">6</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="brown_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="brown_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="brown_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Brown (please don't use this)</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/brown.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">7</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="gray_accent_button">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="relief">none</property>
+                                <signal name="pressed" handler="gray_accent_button_pressed_cb" swapped="no"/>
+                                <child>
+                                  <object class="GtkImage" id="gray_accent_image">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="tooltip-text" translatable="yes">Gray</property>
+                                    <property name="pixbuf">../../../../../../../../../etc/nobara/scripts/nobara-layouts/accent-colors/gray.svg</property>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">8</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">2</property>
+                            <property name="width">3</property>
+                          </packing>
                         </child>
                       </object>
                     </child>
@@ -695,6 +924,7 @@
                           <object class="GtkBox" id="audio_box">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="no-show-all">True</property>
                             <property name="halign">start</property>
                             <property name="hexpand">True</property>
                             <child>
@@ -729,7 +959,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">0</property>
+                            <property name="top-attach">6</property>
                           </packing>
                         </child>
                         <child>
@@ -770,7 +1000,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">1</property>
+                            <property name="top-attach">0</property>
                           </packing>
                         </child>
                         <child>
@@ -798,7 +1028,7 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
                                 <property name="halign">start</property>
-                                <property name="label" translatable="yes">Enable Touchpad Gestures Improvements</property>
+                                <property name="label" translatable="yes">Enable Touchpad Gestures On X11</property>
                                 <property name="xalign">0</property>
                               </object>
                               <packing>
@@ -811,7 +1041,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">2</property>
+                            <property name="top-attach">1</property>
                           </packing>
                         </child>
                         <child>
@@ -852,7 +1082,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">3</property>
+                            <property name="top-attach">2</property>
                           </packing>
                         </child>
                         <child>
@@ -893,7 +1123,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">4</property>
+                            <property name="top-attach">3</property>
                           </packing>
                         </child>
                         <child>
@@ -934,7 +1164,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">6</property>
+                            <property name="top-attach">5</property>
                           </packing>
                         </child>
                         <child>
@@ -1045,7 +1275,7 @@
                           </object>
                           <packing>
                             <property name="left-attach">2</property>
-                            <property name="top-attach">5</property>
+                            <property name="top-attach">4</property>
                           </packing>
                         </child>
                         <child>
