@@ -1,7 +1,7 @@
 BuildArch:              noarch
 
 Name:          nobara-gnome-layouts
-Version:       2.0
+Version:       2.1
 Release:       1%{?dist}
 License:       GPLv2
 Group:         System Environment/Libraries
@@ -10,7 +10,7 @@ Summary:       Nobara's Gnome layouts App
 
 URL:           https://github.com/CosmicFusion/cosmo-gnome-layouts
 
-Source0:        %{name}-%{version}-%{release}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:	wget
 Requires: /usr/bin/bash
