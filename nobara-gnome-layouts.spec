@@ -1,8 +1,8 @@
 BuildArch:              noarch
 
 Name:          nobara-gnome-layouts
-Version:       2.1
-Release:       1%{?dist}
+Version:       2.2
+Release:       2%{?dist}
 License:       GPLv2
 Group:         System Environment/Libraries
 Summary:       Nobara's Gnome layouts App
